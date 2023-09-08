@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Writer's Life Tips</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-video">
+            <iframe
+                width="540"
+                height="360"
+                src="https://www.youtube.com/embed/elnlUNFzoyc?start=36&loop=1&autoplay=1&playlist=elnlUNFzoyc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+        </div>
+        <h1>Writer's Life Tips</h1>
+    </header>
+    <main class="content">
+        <p>Welcome to a world of writing, inspiration, and neo-noir fundamentals and dogma. Get ready to unlock your potential as a writer with the tips only those of a forgotten age had the privilege of utilizing.</p>
+        <button id="confettiButton">🎉 Confetti Time! 🎉</button>
+        <button id="quoteButton">Generate Random Quote</button>
+        <div id="quoteContainer">
+            <p id="quoteText"></p>
+        </div>
+    </main>
+    
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/the-old-man-and-the-sea-by-ernest-hemingway-doc-braham.jpg" alt="hemingway">
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.thoughtco.com/thmb/sWricHhP4jsYe-zX-6uzEka4Ig4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-515504622-59cf77b6172e48fcbad9c1f2ed784f6e.jpg" alt="fitzgerald">
+        </div>
+        <div class="gallery-item">
+            <img src="https://i0.wp.com/columbophile.com/wp-content/uploads/2020/02/Columbo-1.jpg?fit=541%2C434&ssl=1pg" alt="columbo">
+<img src = "https://images.squarespace-cdn.com/content/v1/5adb9cb55cfd79751856f02c/1618285180062-HQZUR3HTY871JHHEG2YU/AdamWelch-2.jpg?format=1000w">
+        </div>
+
+    </section>
+    <section class="about-container">
+        <div class="about-content">
+            <h3>The Noir Renaissance</h3>
+            <p>Step into a world where shadows dance and stories are spun with a touch of mystery. The Noir Writers Movement harkens back to an era when ink flowed like secrets, and narratives were spun in shades of black and white.</p>
+            <p>We are a collective of modern-day wordsmiths who yearn for the timeless elegance of the past. A renaissance born from typewriters and trench coats, our mission is to revive the spirit of the noir era in both ink and life.</p>
+ <p>Join us in embracing the noir lifestyle, a realm of smoky corners, dimly lit streets, and intrigue around every corner. Just as the masters of old painted their tales with shadows and intrigue, we seek to infuse our lives with the same enigmatic allure.</p>
+            <p>Together, we'll revive the essence of the past, crafting narratives that capture the heart of the human experience and living out a manifesto of neo-noir dreams.</p>
+        </div>>
+    </section>
+    <div class="container">
+        <h2>Writing Prompt Generator</h2>
+            <div class="prompt">
+                <p id="promptText">Click the button to generate a writing prompt:</p>
+                <button id="generateButton">Generate Prompt</button>
+                <textarea id="responseText" placeholder="Write your response here"></textarea>
+                <button id="submitResponseButton">Submit Response</button>
+                <div id="submittedResponse"></div>
+            </div>
+        </div>
+    </div>
+    <section class="social-media">
+        <h2>Connect with Us</h2>
+        <div class="social-links">
+            <a href="#" target="_blank"><img src="data:image/png;base64,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" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/instagram-logo-white-on-black.png" alt="Instagram"></a>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer class="footer">
+        &copy; 2023 Writer's Life Tips. All rights reserved.
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
